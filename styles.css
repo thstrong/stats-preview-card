@@ -13,14 +13,15 @@ body {
 
     font-family: 'Inter', sans-serif;
     font-size: 15px;
-    /* font-family: 'Lexend Deca', sans-serif; */
 }
 
 footer {
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    display: none;
+    color: hsl(0, 0%, 100%);
+    margin: 5px auto;
+    /* display: none; */
     /* margin: 20px; */
 
 }
@@ -31,7 +32,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    margin: 0 10px;
+    margin: 10px;
     width: 280px;
     height: 900px;
 
@@ -69,9 +70,7 @@ span {
 
 }
 
-/* .card .infomation .stats {
-    padding: 10px 0;
-} */
+
 
 .card .infomation .stats .box {
     padding: 10px 0;
@@ -89,4 +88,54 @@ span {
 .card .infomation .stats .box h3 {
     padding: 0;
     margin: 0;
+}
+
+@media (min-width:375px) {
+
+    .card {
+        flex-direction: row-reverse;
+        height: 300px;
+        width: 900px;
+    }
+
+    .card .image {
+        width: 400px;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+        margin: 0;
+    }
+
+    .card .image img {
+        border-radius: 0 10px 10px 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .card .infomation {
+        width: 400px;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card .infomation h2,
+    p {
+        margin: 0 50px;
+        margin-top: 30px;
+        margin-right: 60px;
+        text-align: left;
+
+    }
+
+    .card .infomation .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+        margin-top: 30px;
+        margin-right: 70px;
+    }
+
+
 }
