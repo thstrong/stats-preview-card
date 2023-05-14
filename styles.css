@@ -90,6 +90,8 @@ span {
     margin: 0;
 }
 
+
+/* styling large screen */
 @media (min-width:375px) {
 
     .card {
