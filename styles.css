@@ -21,8 +21,6 @@ footer {
     bottom: 0;
     color: hsl(0, 0%, 100%);
     margin: 5px auto;
-    /* display: none; */
-    /* margin: 20px; */
 
 }
 
@@ -92,7 +90,7 @@ span {
 
 
 /* styling large screen */
-@media (min-width:375px) {
+@media (min-width:400px) {
 
     .card {
         flex-direction: row-reverse;
